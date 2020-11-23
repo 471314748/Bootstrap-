@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/base1.css">
+  <style>
+    .w {
+      width: 1170px;
+      margin: 0 auto;
+    }
+
+    header {
+      height: 100px;
+      background-color: red;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 112px;
+      height: 40px;
+      background: url('./img/jd-sprites.png') 0 -219px;
+      margin: 0 40px;
+    }
+
+    .searchBar {
+      flex: 1;
+      height: 80px;
+      border-radius: 40px;
+      background-color: #fff;
+    }
+
+    .login {
+      margin: 0 40px;
+    }
+
+    .login a {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    /* 屏幕992到1199 */
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      .w {
+        width: 970px;
+      }
+
+      header {
+        height: 90px;
+        background-color: red;
+      }
+
+      .searchBar {
+        height: 76px;
+        border-radius: 38px;
+      }
+    }
+
+    /* 屏幕768到1199 */
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      .w {
+        width: 750px;
+      }
+
+      header {
+        background-color: pink;
+        height: 80px;
+      }
+      .logo {
+        margin: 0 20px;
+      }
+
+
+      .searchBar {
+        height: 60px;
+        border-radius: 30px;
+      }
+
+      .login {
+        margin: 0 20px;
+      }
+
+      .login a {
+        font-size: 24px;
+      }
+    }
+
+    /* 屏幕小于等于767 */
+    @media screen and (max-width: 767px) {
+      .w {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="w">
+    <div class="logo">
+      <!-- <img src="./img/jd-sprites.png" alt=""> -->
+    </div>
+    <div class="searchBar">
+    </div>
+    <div class="login"><a href="#">登录</a></div>
+  </header>
+</body>
+
+</html>
